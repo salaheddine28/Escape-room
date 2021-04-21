@@ -17,6 +17,7 @@ function validateForm() {
     var x = document.forms["myForm"]["text"].value;
     if (x == "#fe0000" || x == "#FE0000") {
         alert("Juiste code");
+        window.location = "/spel-3/index.html";
         return false;
     }
 }

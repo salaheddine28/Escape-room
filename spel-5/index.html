@@ -17,8 +17,8 @@
     </header>
 
     <p id="code1">some</p>
-	<p id="code2">things</p>
-	<p id="code3">take</p>
+    <p id="code2">things</p>
+    <p id="code3">take</p>
     <p id="code4">time</p>
 
     <div class="content">
@@ -32,7 +32,8 @@
             <form name="myForm" onclick="return validateForm()">
                 <label for="inp"></label>
                 <input type="text" name="text" id="inpCode">
-                <button type="button" id="inp">Verzenden</button>
+                <a href="/spel-6/index.html"><button type="button" id="inp">Verzenden</button></a>
+
             </form>
 
         </div>
@@ -42,77 +43,77 @@
 
 </body>
 <script>
-
     var si;
 
     function startTimer(duration, display) {
-    var start = Date.now(),
-        diff,
-        minutes,
-        seconds;
-    function timer() {
-        // get the number of seconds that have elapsed since 
-        // startTimer() was called
-        diff = duration - (((Date.now() - start) / 1000) | 0);
+        var start = Date.now(),
+            diff,
+            minutes,
+            seconds;
 
-        // does the same job as parseInt truncates the float
-        minutes = (diff / 60) | 0;
-        seconds = (diff % 60) | 0;
+        function timer() {
+            // get the number of seconds that have elapsed since 
+            // startTimer() was called
+            diff = duration - (((Date.now() - start) / 1000) | 0);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+            // does the same job as parseInt truncates the float
+            minutes = (diff / 60) | 0;
+            seconds = (diff % 60) | 0;
 
-        if (minutes == 3 && seconds == 35)
-        { 
-            clearInterval(si);
-        }
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds; 
+            if (minutes == 3 && seconds == 35) {
+                clearInterval(si);
+            }
 
-        if (diff <= 0) {
-            // add one second so that the count down starts at the full duration
-            // example 05:00 not 04:59
-            start = Date.now() + 1000;
-        }
-    };
-    // we don't want to wait a full second before the timer starts
-    timer();
-    si = setInterval(timer, 1000);
+            display.textContent = minutes + ":" + seconds;
 
-}
+            if (diff <= 0) {
+                // add one second so that the count down starts at the full duration
+                // example 05:00 not 04:59
+                start = Date.now() + 1000;
+            }
+        };
+        // we don't want to wait a full second before the timer starts
+        timer();
+        si = setInterval(timer, 1000);
 
-window.onload = function () {
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
-
-
-
-const btn = document.querySelector('#btn');
-const code = document.querySelector('.code');
-const submit = document.querySelector('.submit');
-const input = document.querySelector('#inp');
-const inpCode = document.querySelector('#inpCode');
-const codes = document.querySelectorAll('.tekst');
-
-
-
-
-const bol = document.querySelector('#bol');
-const circle = document.querySelector('.circle');
-
-
-
-function validateForm() {
-    var x = document.forms["myForm"]["text"].value;
-    if (x == "0335") {
-        alert("Juiste code");
-        return false;
     }
-}
+
+    window.onload = function() {
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
 
 
+
+    const btn = document.querySelector('#btn');
+    const code = document.querySelector('.code');
+    const submit = document.querySelector('.submit');
+    const input = document.querySelector('#inp');
+    const inpCode = document.querySelector('#inpCode');
+    const codes = document.querySelectorAll('.tekst');
+
+
+
+
+    const bol = document.querySelector('#bol');
+    const circle = document.querySelector('.circle');
+
+
+
+    function validateForm() {
+        var x = document.forms["myForm"]["text"].value;
+        if (x == "0335") {
+            alert("Juiste code");
+            window.location = "/spel-6/index.html";
+            return false;
+        } else {
+            alert('Foute code');
+        }
+    }
 </script>
 
 </html>

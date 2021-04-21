@@ -20,7 +20,7 @@ const circle = document.querySelector('.circle');
 function validateForm() {
     var x = document.forms["myForm"]["text"].value;
     if (x == 1234) {
-        window.location="https://www.google.be/?hl=nl";
+        window.location = "/spel-2/index.html";
         return false;
     }
 }

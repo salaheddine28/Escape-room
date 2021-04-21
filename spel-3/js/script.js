@@ -13,6 +13,7 @@ function validateForm() {
     var x = document.forms["myForm"]["text"].value;
     if (x == "192.168.37.63") {
         alert("Juiste code");
+        window.location = "/spel-4/index.html";
         return false;
     }
 }
