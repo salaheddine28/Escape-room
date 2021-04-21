@@ -62,6 +62,7 @@ codes.forEach(code => {
 	code.style.left = (Math.random() * 100) + '%';
 });
 
+//vul hier in om te linken
 btnSend.addEventListener('click', function(){
 	if (inpCode.value == 123) {
 		
