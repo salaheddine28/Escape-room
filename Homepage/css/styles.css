@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat";
-    background-image: url("/background.jpg");
+    background-image: url("../../background.jpg");
     margin: 0;
 }
 
@@ -78,7 +78,7 @@ h2 {
     color: #FFF;
 }
 
-#inpNaam {
+#inpMail {
     font-family: "Montserrat";
     border-radius: 3px;
     border: none;
@@ -88,8 +88,7 @@ h2 {
     text-align: center;
     width: 25%;
 }
-
-#inpNaam:focus {
+#inpMail:focus {
     outline: none;
 }
 
