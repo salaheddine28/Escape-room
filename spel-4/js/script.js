@@ -5,6 +5,7 @@ const btnRetry = document.querySelector('#btnRetry');
 const inpCode = document.querySelector('#inpCode');
 const btnSend = document.querySelector('#btnSend');
 const codes = document.querySelectorAll('.code');
+
 let controle = true;
 document.querySelectorAll('.btn').forEach(btn => {
 	btn.disabled = true;
@@ -56,9 +57,16 @@ btnTry.addEventListener('click', function(){
 	}
 });
 
-
-
 codes.forEach(code => {
 	code.style.top = (Math.random() * 100) + '%';
 	code.style.left = (Math.random() * 100) + '%';
+});
+
+//vul hier in om te linken
+btnSend.addEventListener('click', function(){
+	if (inpCode.value == 123) {
+		
+	} else {
+		
+	}
 });
