@@ -10,9 +10,10 @@ body {
     flex-flow: column nowrap;
     position: relative;
     height: 100vh;
-    background-image: url('../img/background.jpg');
+    background-image: url('../../background.jpg');
 }
 
+/* Algemene Header */
 header {
     /* display: flex; */
     height: 80px;
@@ -21,7 +22,7 @@ header {
 }
 
 h1 a {
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     margin-left: 20px;
     align-items: center;
@@ -29,15 +30,14 @@ h1 a {
 }
 
 .content h2 {
-    color: rgb(165, 163, 104);
+    color: #fd922d;
     font-size: 45px;
-    margin-top: 200px;
     /* flex-flow: row nowrap; */
     text-align: center;
 }
 
 .content p {
-    color: rgb(165, 163, 104);
+    color: #ffffff;
     font-size: 20px;
     margin-top: 20px;
     text-align: center;
@@ -113,7 +113,7 @@ input [type=text] {
     margin-top: 10px;
 }
 
-#raadsel{
+.raadsel{
     color: white;
     text-align: center;
     font-size: larger;
