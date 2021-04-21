@@ -5,27 +5,29 @@
     font-family: 'Antonio', sans-serif;
 }
 
-#code1{
+#code1 {
     color: transparent;
 }
-#code2{
+
+#code2 {
     color: transparent;
     position: absolute;
     margin-left: 65%;
 }
-#code3{
+
+#code3 {
     color: transparent;
     margin-left: 80%;
     position: absolute;
     margin-top: 40%;
 }
-#code4{
+
+#code4 {
     color: transparent;
     margin-left: 30%;
     position: absolute;
     margin-top: 30%;
 }
-
 
 body {
     display: flex;
@@ -35,12 +37,27 @@ body {
     background-image: url('../../background.jpg');
 }
 
-
 header {
     /* display: flex; */
     height: 80px;
     /* background-color: #201446; */
     background: linear-gradient(to bottom, #170944, #201446);
+}
+
+#tip {
+    text-align: center;
+}
+
+#tip p {
+    opacity: 0.5;
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    background-color: black;
 }
 
 .timer {
@@ -149,7 +166,6 @@ input [type=text] {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
