@@ -1,0 +1,124 @@
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url("../../img/background.jpg");
+}
+
+header {
+    font-size: 30px;
+    color: #FFF;
+    text-align: center;
+}
+
+.uitleg{
+	background-color: #000;
+	border-radius: 6px;
+	color: #FFF;
+	font-family: Orbitron;
+	font-size: 24px;
+	padding: 10px;
+	text-align: center;
+}
+
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+}
+
+.lblInputCode {
+    display: none;
+}
+
+.frmCode {
+    display: none;
+    text-align: center;
+}
+.btnStart {
+    margin: 5px;
+	transition: 0.5s;
+    background-color: #FFF;
+    border-radius: 6px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 20%;
+}
+.btnStart:hover {
+	color: #FFF;
+	cursor: pointer;
+    background-color: #000;
+}
+#btnStop {
+    display: none;
+}
+#timer {
+    text-align: center;
+    font-size: 28px;
+}
+.geheimeCode {
+    display: none;
+    font-size: 30px;
+    text-align: center;
+}
+.btnLijst {
+    display: flex;
+    justify-content: center;
+}
+
+#inpCode {
+    color: #000;
+    width: 224px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#inpCode:focus {
+    outline: none;
+}
+
+#inpSubmit {
+    width: 224px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6px;
+    color: #000;
+    border: none;
+    transition: background 0.5s;
+}
+
+#inpSubmit:hover {
+    background-color: #000;
+    transition: 0.5s;
+    color: #FFF;
+    cursor: pointer;
+}
+.asciiFoto img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 60%;
+    height: 400px;
+}
+.errMsg {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fb6565;
+    margin-top: 50px;
+    text-align: center;
+}

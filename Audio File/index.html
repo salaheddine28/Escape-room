@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="icon" type="image/png" href="/img/bombicon.png"/>
+    <title>Audio File | Xenos Bombroom</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titel">Xenos Bombroom</h1>
+    </header>
+    <div class="container">
+        <p class="uitleg">Je hebt onderweg naar de bomruimte een raar apparaat gevonden van een van je collega's... Het klinkt wat raar. <br/>Ik denk dat het versleuteld is</p>
+        <audio controls class="AudioFile">
+            <source src="audio/SecretMessage.mp3" type="audio/mp3">
+        </audio>
+        <form action="#" class="frmCode">
+            <p>
+                <label for="inpCode" class="lblInputCode">Antwoord : </label>
+                <input type="text" id="inpCode" placeholder="Antwoord Geheim Bericht" name="inpCode">
+            </p>
+            <p>
+                <label for="inpSubmit"></label>
+                <input type="submit" value="Verzend" id="inpSubmit">
+            </p>
+        </form>
+        <p class="errMsg"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

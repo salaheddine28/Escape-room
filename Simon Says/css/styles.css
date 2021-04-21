@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    background-image: url("../../img/background.jpg");
+    overflow: hidden;
+}
+header {
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+}
+.gameUitleg {
+    animation-duration: 4s;
+    animation-name: slidein;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    color: #000;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 20px;
+    width: 75%;
+    opacity: 0.8;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+.score {
+    background-color: #222;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 65px;
+    height: 125px;
+    left: calc(50% - 62.5px);
+    line-height: 125px;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 62.5px);
+    width: 125px;
+    z-index: 2;
+}
+.simonSays {
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    position: relative;
+}
+.zwarteBasis {
+    background-color: #222;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+#groeneButton {
+    background-color: #143110;
+    border-radius: 200px 0 0 0;
+    height: 200px;
+    left: 30px;
+    position: absolute;
+    top: 30px;
+    width: 200px;
+}
+#rodeButton {
+    background-color: #521b1b;
+    border-radius: 0 200px 0 0;
+    height: 200px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 200px;
+}
+#geleButton {
+    background-color: #464515;
+    border-radius: 0 0 200px 0;
+    bottom: 30px;
+    height: 200px;
+    position: absolute;
+    right: 30px;
+    width: 200px;
+}
+#blauweButton {
+    background-color: #1a164b;
+    border-radius: 0 0 0 200px;
+    bottom: 30px;
+    height: 200px;
+    left: 30px;
+    position: absolute;
+    width: 200px;
+}
+.simonSays > div:hover {
+    cursor: pointer;
+}
+.audioFiles {
+    display: none;
+}
+.btnKnoppen {
+	border: none;
+	font-weight: bold;
+	height: 40px;
+	text-transform: uppercase;
+	width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFF;
+    border-radius: 6px;
+    color: #000;
+    display: block;
+    font-family: "Montserrat";
+    font-size: 30px;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.btnKnoppen:hover{
+    background-color: #000;
+	color: #FFF;
+	cursor: pointer;
+}
+.paragraafSubmit {
+    display: block;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}

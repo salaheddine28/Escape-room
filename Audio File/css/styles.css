@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+body {
+	background-image: url("../../img/background.jpg");
+	overflow: hidden;
+    height: 100%;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+}
+
+.titel {
+	color: #FFF;
+	font-size: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 400px;
+}
+
+.uitleg{
+	background-color: #000;
+	border-radius: 6px;
+	color: #FFF;
+	font-family: Orbitron;
+	font-size: 34px;
+	padding: 10px;
+	text-align: center;
+}
+
+.AudioFile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.frmCode {
+	border-radius: 6px;
+	color: #FFF;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding: 10px;
+	width: 300px;
+}
+
+.frmCode p {
+	display: flex;
+}
+
+.frmCode input[type="text"]{
+	border-radius: 3px;
+	border: none;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	text-align: center;
+	width: 80%;
+}
+
+.frmCode input[type="text"]:focus{
+	outline: none;
+}
+
+.frmCode input[type="submit"]{
+	border-radius: 6px;
+	border: none;
+	font-weight: bold;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	transition: 0.5s;
+	width: 80%;
+}
+
+.frmCode input[type="submit"]:hover{
+	background-color: #000;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.frmCode .lblInputCode {
+	display: none;
+	margin-right: 10px;
+}
+
+.errMsg {
+    color: #fb6565;
+    margin-top: 50px;
+    text-align: center;
+}
