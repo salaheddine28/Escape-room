@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Antonio', sans-serif;
+}
+
+#code1{
+    color: transparent;
+}
+#code2{
+    color: transparent;
+    position: absolute;
+    margin-left: 65%;
+}
+#code3{
+    color: transparent;
+    margin-left: 80%;
+    position: absolute;
+    margin-top: 40%;
+}
+#code4{
+    color: transparent;
+    margin-left: 30%;
+    position: absolute;
+    margin-top: 30%;
+}
+
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    height: 100vh;
+    background-image: url('../image/background.jpg');
+}
+
+
+header {
+    /* display: flex; */
+    height: 80px;
+    /* background-color: #201446; */
+    background: linear-gradient(to bottom, #170944, #201446);
+}
+
+.timer {
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+}
+
+h1 a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content h2 {
+    color: rgb(165, 163, 104);
+    font-size: 45px;
+    margin-top: 200px;
+    /* flex-flow: row nowrap; */
+    text-align: center;
+}
+
+.content p {
+    color: rgb(165, 163, 104);
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#btn {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    align-items: center;
+}
+
+#btn a {
+    width: 150px;
+    color: gray;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgb(165, 163, 104);
+    border-radius: 23px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#btn a:hover {
+    color: rgb(224, 224, 216);
+    background-color: rgb(165, 163, 104);
+    transition: 0.7s;
+}
+
+.answer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 10px;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#bol {
+    color: white;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 15px;
+    height: 15px;
+    bottom: 38px;
+    left: 188px;
+    cursor: none;
+}
+
+.link {
+    opacity: 0.7;
+}
+
+input [type=text] {
+    outline: none;
+}
+
+#inpCode {
+    margin-top: 50px;
+}
+
+#color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}

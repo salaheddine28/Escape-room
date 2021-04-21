@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">XENOS</a></h1>
+    </header>
+
+    <div class="content">
+        <h2>XENOS BOMBROOM</h2>
+        <p>- Escape Rooms -</p>
+    </div>
+   
+    <div class="uitleg">
+        <p id="raadsel">Los het raadsel op om te weten waar te zoeken:</p>
+        <p id="raadsel" >Ik kom 's nachts zonder dat je me hoeft te roepen, verberg me zodra het licht wordt. Ook al lijk ik klein, ik ben veel machtiger dan je zou denken. Wat ben ik?</p>
+    </div>
+
+    <div id="btn">
+        <a href="#" data-code="12345">Start now</a>
+    </div>
+
+
+    <div class="circle">
+        <button id="bol"></button>
+    </div>
+
+
+
+    <div class="answer">
+        
+        <div class="code hidden">
+
+            <form name="myForm" onsubmit="return validateForm()">
+                <label for="inp"></label>
+                <input type="text" name="text" id="inpCode">
+                <input type="submit" id="inp">
+            </form>
+
+            <p id="a"></p>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
