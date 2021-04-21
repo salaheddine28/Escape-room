@@ -3,13 +3,13 @@ const btnSubmit = document.querySelector('#inpSubmit');
 const MOGELIJKE_ANTWOORDEN = ["U", "De letter U", "letter u"];
 const lblEror = document.querySelector('.errMsg');
 
-btnSubmit.addEventListener('click', function (e) {
+btnSubmit.addEventListener('click', function(e) {
     e.preventDefault();
     if (checkAlsRaadselJuistIs() > 0) {
         // Verwijs hier naar volgende pagina
-        lblEror.innerHTML = "";
-    }
-    else {
+        lblEror.innerHTML = "Juiste antwoord!";
+        window.location = "/spel-6/index.html";
+    } else {
         lblEror.innerHTML = "Fout antwoord, probeer opnieuw";
     }
     inputCode.value = "";

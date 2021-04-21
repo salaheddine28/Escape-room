@@ -10,6 +10,7 @@ const antwoordCode = ["Gigabom", "Buitenaards", "Americium", "XenosBomb", "Bombr
 
 let huidigeCode = 0;
 let timer;
+
 function randomAsciiCode() {
     let gekozenNummer = "0";
     let asciiCode = "";
@@ -28,7 +29,7 @@ function randomAsciiCode() {
     return asciiCode
 }
 
-btnStart.addEventListener('click', function (e) {
+btnStart.addEventListener('click', function(e) {
     // Instellen van de timer
     let aftellingNaar = new Date();
     aftellingNaar.setSeconds(aftellingNaar.getSeconds() + 302);
@@ -39,7 +40,7 @@ btnStart.addEventListener('click', function (e) {
     geheimBericht.innerHTML = randomAsciiCode();
 
     // Het starten van de timer
-    timer = setInterval(function () {
+    timer = setInterval(function() {
         let tijdNu = new Date().getTime();
         let verschilTijd = aftellingNaar - tijdNu;
 
@@ -62,7 +63,7 @@ btnStart.addEventListener('click', function (e) {
     }, 1000);
 })
 
-btnSubmit.addEventListener('click', function () {
+btnSubmit.addEventListener('click', function() {
     if (inputAnswerFromUser.value.toLowerCase() != antwoordCode[huidigeCode].toLowerCase()) {
         errorMessage.innerHTML = 'U heeft een foute antwoord gegeven.';
     } else {
@@ -71,7 +72,7 @@ btnSubmit.addEventListener('click', function () {
         btnStart.style.display = "none";
         imgAscii.style.display = "none";
         timerMessage.innerHTML = "";
-        //Naar de volgende room
+        window.location = "/spel-10/index.html";
     }
     errorMessage.value = '';
 });
