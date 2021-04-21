@@ -30,15 +30,15 @@ h1 a {
 }
 
 .content h2 {
-    color: #fd922d;
-    font-size: 45px;
+    color: #ff6161;
+    font-size: 55px;
     /* flex-flow: row nowrap; */
     text-align: center;
 }
 
 .content p {
-    color: #ffffff;
-    font-size: 20px;
+    color: #ff7961;
+    font-size: 26px;
     margin-top: 20px;
     text-align: center;
 }

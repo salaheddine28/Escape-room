@@ -1,0 +1,122 @@
+body {
+    font-family: "Montserrat";
+    background-image: url("../../img/background.jpg");
+    margin: 0;
+}
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #2D2D2D;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 100px;
+}
+.uitlegBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.uitleg{
+    color: #FFF;
+    animation: ease fadeIn 6s;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+h1 {
+    margin: 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.spelerInvulling {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.frmSpelerInvulling label {
+    display: none;
+}
+#lblSubmit {
+    display: none;
+}
+#btnSubmit {
+    font-family: "Montserrat";
+    margin-top: 10px;
+    border-radius: 3px;
+	border: none;
+	font-weight: bold;
+	height: 60px;
+    font-size: 30px;
+	text-transform: uppercase;
+    padding: 10px;
+	transition: 0.5s;
+	width: calc(25% + 20px);
+}
+#btnSubmit:hover{
+    background-color: #000;
+	color: #FFF;
+	cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #FFF;
+}
+
+#inpNaam {
+    font-family: "Montserrat";
+    border-radius: 3px;
+	border: none;
+	height: 45px;
+	padding: 10px;
+    font-size: 30px;
+	text-align: center;
+	width: 25%;
+}
+#inpNaam:focus {
+    outline: none;
+}
+
+.gameUitleg {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    color: #000;
+    overflow: hidden;
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-delay: 2s;
+    padding: 20px;
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility:visible;
+    }
+  }
